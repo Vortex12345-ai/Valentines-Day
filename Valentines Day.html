@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Proposal</title>
+</head>
+<body>
+
+    <h1>Will you be a nigga valentine?</h1>
+
+    <button onclick="checkResponse('no')">No</button>
+    <button onclick="checkResponse('yes')">Yes</button>
+
+    <script>
+        let responseCount = 0;
+
+        function checkResponse(response) {
+            if (response.toLowerCase() === 'yes') {
+                alert("YAAY Happy Valentine's Day!");
+                // You can perform additional actions here if needed
+            } else {
+                responseCount++;
+                alert("You pressed 'No'. Try again.");
+                if (responseCount >= 3) {
+                    alert("Okay, you win! Happy Valentine's Day!");
+                    // You can perform additional actions here if needed
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>
